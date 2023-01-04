@@ -7,7 +7,7 @@ const fs = require('fs');
 let databasePath = appRoot + '/config/' + config.sqlite_file_name;
 
 if (!fs.existsSync(databasePath)) {
-  databasePath = appRoot + '/config/database.sqlite.sample';
+  databasePath = appRoot + '/config/database.sqlite';
 }
 
 const db = new Database(databasePath);
