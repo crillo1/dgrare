@@ -11,6 +11,8 @@ var punksRouter = require('./routes/punks');
 
 var app = express();
 
+app.use(cors())
+
 if (app.get('env') === 'development') {
   var livereload = require('easy-livereload');
   app.use(livereload({
